@@ -1,0 +1,38 @@
+{
+  "name": "ostap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\"",
+    "test": "jest"
+  },
+  "bin": "cli.js",
+  "main": "./src/index.js",
+  "files": [
+    "src",
+    "cli.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itwillwork/ostap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itwillwork/ostap/issues"
+  },
+  "homepage": "https://github.com/itwillwork/ostap#readme",
+  "dependencies": {
+    "cac": "6.4.2",
+    "chalk": "2.4.2",
+    "dependencies-tree-builder": "^1.0.1",
+    "lodash": "4.17.11",
+    "ora": "3.2.0",
+    "prompt-confirm": "2.0.4",
+    "semver": "5.6.0"
+  },
+  "devDependencies": {
+    "jest": "24.3.1"
+  }
+}

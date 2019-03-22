@@ -1,0 +1,6 @@
+.babelrc
+/node_modules
+npm-debug.log
+.idea
+.DS_Store
+.npmrc
