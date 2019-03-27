@@ -42,6 +42,14 @@ Options:
   -v, --version                  Display version number 
   -h, --help                     Display help 
 ```
+## Quick start
+```
+npm i -g ostap
+
+echo "{\"name\":\"demo-project\",\"version\":\"1.0.0\",\"dependencies\":{\"@nivo/bar\":\"0.54.0\",\"@nivo/core\":\"0.53.0\",\"@nivo/pie\":\"0.54.0\",\"@nivo/stream\":\"0.54.0\"}}" > ./simple-package.json
+
+ostap ./simple-package.json -s
+```
 ## Contributing
 Got ideas on how to make this better? Open an issue!
 
