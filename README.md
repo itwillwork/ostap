@@ -46,9 +46,10 @@ Options:
 ```
 npm i -g ostap
 
-echo "{\"name\":\"demo-project\",\"version\":\"1.0.0\",\"dependencies\":{\"@nivo/bar\":\"0.54.0\",\"@nivo/core\":\"0.53.0\",\"@nivo/pie\":\"0.54.0\",\"@nivo/stream\":\"0.54.0\"}}" > ./simple-package.json
+# create package.json if not exists
+echo "{\"name\":\"demo-project\",\"version\":\"1.0.0\",\"dependencies\":{\"@nivo/bar\":\"0.54.0\",\"@nivo/core\":\"0.53.0\",\"@nivo/pie\":\"0.54.0\",\"@nivo/stream\":\"0.54.0\"}}" > ./package.json
 
-ostap ./simple-package.json -s
+ostap ./package.json -s
 ```
 ## Contributing
 Got ideas on how to make this better? Open an issue!
