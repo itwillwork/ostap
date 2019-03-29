@@ -116,7 +116,7 @@ module.exports = async (
   spinner.start('analyzing optimal dependencies tree');
 
   const optimalTreeRoot = applyDependencyChanges(
-    optimalVariant.dependenciesChanges
+    _.get(optimalVariant, 'dependenciesChanges')
   );
 
   const { scoupe: optimalTreeScoupe } = await buildTreeAsync(
