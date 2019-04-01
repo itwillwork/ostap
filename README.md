@@ -1,6 +1,16 @@
 # ostap
 
-Cli that check your bundle contains multiple versions of the same package. Only by package.json.
+CLI tool that fast checks if your bundle contains multiple versions of the same package, only by looking in package.json.
+
+Advantages:
+
+* faster than alternatives, since it doesn't require rebuilding the bundle (example, [duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin));
+
+* uses only package.json;
+
+* suggests optimal package versions;
+
+* you can quickly see all the current versions of the same package that are used in the current bundle.
 
 <img src="https://github.com/itwillwork/ostap/blob/master/media/demo.png?raw=true" width="600px" />
 
