@@ -75,7 +75,7 @@ const printError = message => {
 const cli = cac();
 
 cli
-  .command('<file>', 'Check project dependencies duplicates by package.json')
+  .command('[...file]', 'Check project dependencies duplicates by package.json')
   .option('-c, --flush-cache', 'Flush cache')
   .option('-d, --duplicates', 'Show duplicates in source and optimal tree')
   .option('-s, --source-tree-duplicates', 'Show duplicates in source tree')
@@ -83,9 +83,8 @@ cli
   .example('ostap ./package.json')
   .example('ostap ./package.json --flush-cache')
   .example('ostap /Users/frontend/monkey/package.json -d')
-  .action((file, flags) => {
-    if (file.length === 0) return cli.outputHelp();
-
+  .action(([filePath], flags) => {
+    const file = filePath || './package.json';
     let options = { ...DEFAULT_OPTIONS };
 
     if (flags['flushCache']) {
