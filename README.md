@@ -10,9 +10,8 @@ Advantages:
 
 * suggests optimal package versions;
 
-* you can quickly see all the current versions of the same package that are used in the current bundle.
-
-<img src="https://github.com/itwillwork/ostap/blob/master/media/demo.png?raw=true" width="600px" />
+* you can quickly see all the current versions of the same package that are used in the current bundle. 
+  [see how](https://github.com/itwillwork/ostap#how-to-use)
 
 ## How to use
 
@@ -32,10 +31,18 @@ For example, you have `package.json`:
 
 Running with this `package.json`:
 ```
-ostap ./package.json -d
+ostap ./package.json
 ```
 See the results:
 
+<img src="https://github.com/itwillwork/ostap/blob/master/media/demo2.png?raw=true" width="600px" />
+
+### For see all the current versions of the same package that are used in the current bundle
+
+Running:
+```
+ostap ./package.json -d
+```
 <img src="https://github.com/itwillwork/ostap/blob/master/media/demo.png?raw=true" width="600px" />
 
 ### Installation
