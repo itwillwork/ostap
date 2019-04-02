@@ -37,7 +37,7 @@ const run = async (file, options) => {
   try {
     optimalTree = await ostap(treeRoot, options);
   } catch (error) {
-    throw 'processing error\n' + error;
+    throw error;
   }
 
   if (optimalTree) {

@@ -21,7 +21,7 @@ const spinner = ora({
   color: 'yellow',
 });
 
-module.exports = async (
+const main = async (
   treeRoot,
   options = DEFAULT_OPTIONS,
   logger = defaultLogger
@@ -161,8 +161,17 @@ module.exports = async (
 
     return optimalTreeRoot;
   } else {
-    console.log('well done, not found duplicates');
+    console.log('😞 no update recommendation');
   }
 
   return null;
 };
+
+module.exports = async (...args) => {
+  try {
+    return await main(...args);
+  } catch (error) {
+    spinner.fail('fail');
+    throw error;
+  }
+}

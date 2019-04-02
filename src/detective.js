@@ -191,7 +191,7 @@ class Detective {
               0
             );
 
-            const mark = matches / summary;
+            const mark = summary ? (matches / summary) : 1;
 
             return {
               mark,
@@ -244,6 +244,7 @@ class Detective {
             patchChangedVersions[0] ||
             majorChangedVersions[0] ||
             topMarked[0];
+
           this._logger.log('selected', selected);
 
           suspects.push({
