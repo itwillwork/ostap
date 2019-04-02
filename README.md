@@ -10,8 +10,17 @@ Advantages:
 
 * suggests optimal package versions;
 
-* you can quickly see all the current versions of the same package that are used in the current bundle. 
-  [see how](https://github.com/itwillwork/ostap#how-to-use)
+* you can quickly see all the current versions of the same package that are used in the current bundle. [see how](https://github.com/itwillwork/ostap#for-see-all-the-current-versions-of-the-same-package-that-are-used-in-the-current-bundle)
+
+## Quick start
+```
+npm i -g ostap
+
+# create package.json if not exists
+echo "{\"name\":\"demo-project\",\"version\":\"1.0.0\",\"dependencies\":{\"@nivo/bar\":\"0.54.0\",\"@nivo/core\":\"0.53.0\",\"@nivo/pie\":\"0.54.0\",\"@nivo/stream\":\"0.54.0\"}}" > ./package.json
+
+ostap ./package.json -s
+```
 
 ## How to use
 
@@ -28,6 +37,7 @@ For example, you have `package.json`:
   }
 }
 ```
+### For suggests optimal package versions
 
 Running with this `package.json`:
 ```
@@ -58,15 +68,6 @@ Options:
   -o, --optimal-tree-duplicates  Show duplicates in optimal tree 
   -v, --version                  Display version number 
   -h, --help                     Display help 
-```
-## Quick start
-```
-npm i -g ostap
-
-# create package.json if not exists
-echo "{\"name\":\"demo-project\",\"version\":\"1.0.0\",\"dependencies\":{\"@nivo/bar\":\"0.54.0\",\"@nivo/core\":\"0.53.0\",\"@nivo/pie\":\"0.54.0\",\"@nivo/stream\":\"0.54.0\"}}" > ./package.json
-
-ostap ./package.json -s
 ```
 ## Contributing
 Got ideas on how to make this better? Open an issue!
