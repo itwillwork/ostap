@@ -8,7 +8,7 @@ Advantages:
 
 * uses only package.json;
 
-* suggests optimal package versions;
+* suggests optimal package versions; [see how](https://github.com/itwillwork/ostap#for-suggests-optimal-package-versions)
 
 * you can quickly see all the current versions of the same package that are used in the current bundle. [see how](https://github.com/itwillwork/ostap#for-see-all-the-current-versions-of-the-same-package-that-are-used-in-the-current-bundle)
 
@@ -39,7 +39,6 @@ For example, you have `package.json`:
 ```
 ### For suggests optimal package versions
 
-Running with this `package.json`:
 ```
 ostap ./package.json
 ```
@@ -49,7 +48,6 @@ See the results:
 
 ### For see all the current versions of the same package that are used in the current bundle
 
-Running:
 ```
 ostap ./package.json -d
 ```
