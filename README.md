@@ -58,7 +58,7 @@ npm i -g ostap
 ### Options
 ```
 Options:
-  -c, --flush-cache              Flush cache 
+  -c, --use-cache                Use cache 
   -d, --duplicates               Show duplicates in source and optimal tree 
   -s, --source-tree-duplicates   Show duplicates in source tree 
   -o, --optimal-tree-duplicates  Show duplicates in optimal tree 
