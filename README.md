@@ -42,8 +42,6 @@ For example, you have `package.json`:
 ```
 ostap ./package.json
 ```
-See the results:
-
 <img src="https://github.com/itwillwork/ostap/blob/master/media/demo3.png?raw=true"  />
 
 ### For see all the current versions of the same package that are used in the current bundle
