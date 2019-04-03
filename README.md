@@ -8,9 +8,9 @@ Advantages:
 
 * uses only package.json;
 
-* suggests optimal package versions; [see how](https://github.com/itwillwork/ostap#for-suggests-optimal-package-versions)
+* suggests optimal package versions; [see how](#for-suggests-optimal-package-versions)
 
-* you can quickly see all the current versions of the same package that are used in the current bundle. [see how](https://github.com/itwillwork/ostap#for-see-all-the-current-versions-of-the-same-package-that-are-used-in-the-current-bundle)
+* you can quickly see all the current versions of the same package that are used in the current bundle. [see how](#for-see-all-the-current-versions-of-the-same-package-that-are-used-in-the-current-bundle)
 
 ## Quick start
 ```
