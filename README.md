@@ -42,14 +42,14 @@ For example, you have `package.json`:
 ```
 ostap ./package.json
 ```
-<img src="https://github.com/itwillwork/ostap/blob/master/media/demo5.png?raw=true"  />
+<img src="https://github.com/itwillwork/ostap/blob/master/media/demo5.png?raw=true" width="650px" />
 
 ### For see all the current versions of the same package that are used in the current bundle
 
 ```
 ostap ./package.json -s
 ```
-<img src="https://github.com/itwillwork/ostap/blob/master/media/demo7.png?raw=true"  />
+<img src="https://github.com/itwillwork/ostap/blob/master/media/demo7.png?raw=true" width="650px" />
 
 ### Installation
 ```
