@@ -42,7 +42,7 @@ const run = async (file, options) => {
 
   if (optimalTree) {
     const prompt = new Confirm({
-      message: 'Change the original package.json?',
+      message: 'Apply suggested update to original package.json file?',
       default: false,
     });
 

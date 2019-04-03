@@ -58,24 +58,22 @@ class EntropyService {
     const duplicatesCount = this.getDuplicatesCount(scoupe);
 
     if (!duplicatesCount) {
-      return `zero duplicates`;
+      return `not found packages with multiple versions 🎉`;
     }
 
-    return `${duplicatesCount} duplicates found, and they have ${entropy} copies`;
+    return `${duplicatesCount} packages with multiple versions, and they spawned ${entropy} duplicates`;
   }
 
   printDuplicates(scoupe) {
     const entropy = this.scoreEntropy(scoupe);
     const duplicatesCount = this.getDuplicatesCount(scoupe);
 
-    console.log('\n');
-
     if (duplicatesCount) {
       console.log(
-        `🔎 ${duplicatesCount} duplicates found, and they have ${entropy} copies`
+        ` 🔎 ${duplicatesCount} packages with multiple versions, and they spawned ${entropy} duplicates`
       );
     } else {
-      console.log('🎉 well done! zero duplicates');
+      console.log(' 🔎 not found packages with multiple versions 👌');
     }
 
     Object.values(scoupe).forEach(dependency => {
@@ -90,9 +88,9 @@ class EntropyService {
       console.log('\n');
       console.log(chalk.bold.yellow(`\ WARNING in ${mainVersion.name}`));
       console.log(
-        '  Multiple version of versions ' +
+        '   Multiple version of versions ' +
           chalk.bold.green(mainVersion.name) +
-          ' found:'
+          '  found:'
       );
 
       allVersions.forEach(data => {

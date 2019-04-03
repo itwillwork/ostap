@@ -45,6 +45,8 @@ const main = async (
   spinner.succeed('source tree: ' + entropyService.getInfo(scoupe));
 
   if (options.printSourceTreeDuplicates) {
+    console.log('\n');
+    console.log(chalk.bold.yellow('SOURCE TREE DESCRIPTION:'));
     entropyService.printDuplicates(scoupe);
     console.log('\n');
   }
@@ -155,6 +157,7 @@ const main = async (
     console.log('\n');
 
     if (options.printOptimalTreeDuplicates) {
+      console.log(chalk.bold.yellow('OPTIMAL TREE DESCRIPTION:'));
       entropyService.printDuplicates(optimalTreeScoupe);
       console.log('\n');
     }
