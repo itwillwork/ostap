@@ -12,7 +12,7 @@ const Confirm = require('prompt-confirm');
 const pkg = require('./package.json');
 
 const DEFAULT_OPTIONS = {
-  useCache: true,
+  useCache: false,
   viewFullLogs: false,
   printSourceTreeDuplicates: false,
   printOptimalTreeDuplicates: false,
@@ -76,19 +76,19 @@ const cli = cac();
 
 cli
   .command('[...file]', 'Check project dependencies duplicates by package.json')
-  .option('-c, --flush-cache', 'Flush cache')
+  .option('-c, --use-cache', 'Use cache')
   .option('-d, --duplicates', 'Show duplicates in source and optimal tree')
   .option('-s, --source-tree-duplicates', 'Show duplicates in source tree')
   .option('-o, --optimal-tree-duplicates', 'Show duplicates in optimal tree')
   .example('ostap ./package.json')
-  .example('ostap ./package.json --flush-cache')
+  .example('ostap ./package.json --use-cache')
   .example('ostap /Users/frontend/monkey/package.json -d')
   .action(([filePath], flags) => {
     const file = filePath || './package.json';
     let options = { ...DEFAULT_OPTIONS };
 
-    if (flags['flushCache']) {
-      options.useCache = false;
+    if (flags['useCache']) {
+      options.useCache = true;
     }
 
     if (flags['sourceTreeDuplicates'] || flags['duplicates']) {
