@@ -171,8 +171,11 @@ class Detective {
             if (!version.dependencies) {
               return {
                 mark: 0,
+                reason: [],
+                data: version,
               };
             }
+            
             const reason = [];
             const summary = Object.keys(version.dependencies).length;
             const matches = Object.entries(version.dependencies).reduce(
