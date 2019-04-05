@@ -1,6 +1,6 @@
 {
   "name": "ostap",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "dependencies": {
     "cac": "6.4.2",
     "chalk": "2.4.2",
-    "dependencies-tree-builder": "^1.0.2",
+    "dependencies-tree-builder": "1.0.5",
     "lodash": "4.17.11",
     "ora": "3.2.0",
     "prompt-confirm": "2.0.4",
