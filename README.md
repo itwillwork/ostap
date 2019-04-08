@@ -70,3 +70,5 @@ Got ideas on how to make this better? Open an issue!
 
 ## License
 MIT
+
+P.S. Ostap Bender is a fictional man who appeared in the novels The Twelve Chairs and The Little Golden Calf written by Soviet authors Ilya Ilf and Yevgeni Petrov. His description as "The Great Combinator" became a catch phrase in the Russian language.
