@@ -161,6 +161,7 @@ class Detective {
           });
         } else {
           const allVersions = await this._packageCollector.getAllVersions(name);
+          
           this._logger.log('find all', name, effects);
 
           effects.forEach(effect => {
@@ -207,6 +208,7 @@ class Detective {
             (max, item) => Math.max(max, item.mark),
             -Infinity
           );
+
           const topMarked = markedVersions.filter(
             version => version.mark === topMark
           );
