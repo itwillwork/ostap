@@ -83,9 +83,10 @@ class Detective {
 
       return {
         ...version,
-        mark: Object.entries(dependencies).reduce((summ, [name, version]) => {
-          return summ + markDependency(effects[name], version);
-        }, 0),
+        mark: Object.entries(dependencies)
+          .reduce((summ, [name, version]) => {
+            return summ + markDependency(effects[name], version);
+          }, 0),
       };
     });
 
